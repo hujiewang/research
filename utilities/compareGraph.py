@@ -12,7 +12,7 @@ def getData(fname):
             cnt+=1
     return x_data, y_data
 
-x_0,y_0 = getData('/root/source/Sonny/experiments/hujie/h_word2vec/acc_log.txt')
-x_1,y_1 = getData('/root/source/Sonny/experiments/hujie/h_word2vec/_acc_log.txt')
+x_0,y_0 = getData('/root/source/research/exp/semeval2016_task3/train_loss.txt')
+x_1,y_1 = getData('/root/source/research/exp/semeval2016_task3/valid_loss.txt')
 plt.plot(x_0, y_0, 'r-', x_1, y_1, 'b-',)
 plt.show()

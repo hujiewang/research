@@ -28,6 +28,5 @@ class LivePlot:
         self.subplot.clear()
         self.subplot.plot(x_data,y_data)
 
-
-lp=LivePlot('/root/source/research/exp/h_word2vec/loss_log.txt')
-
+lp=LivePlot('/root/source/research/exp/semeval2016_task3/valid_map.txt')
+lp=LivePlot('/root/source/research/exp/semeval2016_task3/valid_loss.txt')
