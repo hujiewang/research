@@ -40,3 +40,13 @@ test.py
 *.db
 *.log
 *.pyc
+
+*.txt
+*.dat
+*.zip
+*.tar.gz
+/exp/h_rnn/data
+/exp/h_rnn/MNIST_data
+/exp/semeval2016_task3/data
+/exp/semeval2016_task3/data
+/exp/semeval2016_task3/tmp

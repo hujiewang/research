@@ -22,9 +22,9 @@ if __name__ == '__main__':
     outp1='./data/word2vec/w2v.model'
     outp2='./data/word2vec/w2v.vec'
     sentences=LineSentence('./data/text_cleaned_phrase.txt')
-    model = Word2Vec(size=100, window=5, min_count=5,max_vocab_size=50000,workers=multiprocessing.cpu_count())
+    model = Word2Vec(size=30, window=5, min_count=5,max_vocab_size=50000,workers=multiprocessing.cpu_count())
     model.build_vocab(sentences)
-    for i in range(50):
+    for i in range(30):
         model.train(sentences)
     # trim unneeded model memory = use(much) less RAM
     #model.init_sims(replace=True)

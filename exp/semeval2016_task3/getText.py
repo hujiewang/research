@@ -8,10 +8,14 @@ sentences=reader.getText(TRAIN+EXTRA)
 
 bigram=Phrases.load('./data/bigram.dat')
 trigram=Phrases.load('./data/trigram.dat')
+sen_set=set()
 with open('./data/text_cleaned_phrase.txt','w') as f:
     for sentence in sentences:
-        f.write(preprocess(sentence,no_stopwords=True,bigram=bigram,trigram=trigram))
-        f.write('\n')
+        s=preprocess(sentence,bigram=bigram,trigram=trigram)
+        if s not in sen_set:
+            sen_set.add(s)
+            f.write(preprocess(sentence,bigram=bigram,trigram=trigram))
+            f.write('\n')
 
 
 '''

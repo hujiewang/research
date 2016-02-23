@@ -7,5 +7,5 @@ for i in range(50):
 
 
 while True:
-    text = input('Enter: ')
+    text = raw_input('Enter: ')
     print(model.most_similar(positive=[text], negative=[], topn=5))
